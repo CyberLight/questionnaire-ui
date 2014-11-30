@@ -1,0 +1,22 @@
+<h1>Listing Answers</h1>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+    <a href="<%= new_an_path %>" class="btn btn-success">New Answer</a>
+  </div>
+  <div class="panel-body" style="overflow: auto;">
+    <%= form_tag ans_path, :method => 'get', :id => 'answers_search', class: 'form-inline', style: 'margin-bottom: 15px;' do %>
+        <div class="form-group">
+          <%= text_field_tag :search, params[:search], class: 'form-control', placeholder: 'Search by Naim' %>
+        </div>
+        <%= submit_tag 'Search', :name => nil, class: 'btn btn-default' %>
+        <%= link_to 'Clear', ans_path, :name => nil, class: 'btn btn-info' %>
+    <% end %>
+    <div id="answers">
+        <%= render 'answers' %>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <a href="<%= new_an_path %>" class="btn btn-success">New Answer</a>
+  </div>
+</div>

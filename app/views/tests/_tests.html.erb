@@ -1,0 +1,88 @@
+<%= paginate @tests %>
+<!-- Table -->
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th colspan="3"></th>
+    <th>Id raz</th>
+    <th>Naim</th>
+    <th>Rez1</th>
+    <th>Balb1</th>
+    <th>Bale1</th>
+    <th>Rez2</th>
+    <th>Balb2</th>
+    <th>Bale2</th>
+    <th>Rez3</th>
+    <th>Balb3</th>
+    <th>Bale3</th>
+    <th>Rez4</th>
+    <th>Balb4</th>
+    <th>Bale4</th>
+    <th>Rez5</th>
+    <th>Balb5</th>
+    <th>Bale5</th>
+    <th>Rez6</th>
+    <th>Balb6</th>
+    <th>Bale6</th>
+    <th>Rez7</th>
+    <th>Balb7</th>
+    <th>Bale7</th>
+    <th>Rez8</th>
+    <th>Balb8</th>
+    <th>Bale8</th>
+    <th>Rez9</th>
+    <th>Balb9</th>
+    <th>Bale9</th>
+    <th>Rez10</th>
+    <th>Balb10</th>
+    <th>Bale10</th>
+    <th>User rez</th>
+    <th>Formula</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @tests.each do |test| %>
+      <tr>
+        <td><%= link_to 'Show', test, class: 'btn btn-info' %></td>
+        <td><%= link_to 'Edit', edit_test_path(test), class: 'btn btn-warning' %></td>
+        <td><%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <td><%= test.id_raz %></td>
+        <td><%= test.naim %></td>
+        <td><%= test.rez1 %></td>
+        <td><%= test.balb1 %></td>
+        <td><%= test.bale1 %></td>
+        <td><%= test.rez2 %></td>
+        <td><%= test.balb2 %></td>
+        <td><%= test.bale2 %></td>
+        <td><%= test.rez3 %></td>
+        <td><%= test.balb3 %></td>
+        <td><%= test.bale3 %></td>
+        <td><%= test.rez4 %></td>
+        <td><%= test.balb4 %></td>
+        <td><%= test.bale4 %></td>
+        <td><%= test.rez5 %></td>
+        <td><%= test.balb5 %></td>
+        <td><%= test.bale5 %></td>
+        <td><%= test.rez6 %></td>
+        <td><%= test.balb6 %></td>
+        <td><%= test.bale6 %></td>
+        <td><%= test.rez7 %></td>
+        <td><%= test.balb7 %></td>
+        <td><%= test.bale7 %></td>
+        <td><%= test.rez8 %></td>
+        <td><%= test.balb8 %></td>
+        <td><%= test.bale8 %></td>
+        <td><%= test.rez9 %></td>
+        <td><%= test.balb9 %></td>
+        <td><%= test.bale9 %></td>
+        <td><%= test.rez10 %></td>
+        <td><%= test.balb10 %></td>
+        <td><%= test.bale10 %></td>
+        <td><%= test.user_rez %></td>
+        <td><%= test.formula %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= paginate @tests %>

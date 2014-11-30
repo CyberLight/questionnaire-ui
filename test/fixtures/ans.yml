@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_test: 1
+  naim: MyText
+  otvet1: MyText
+  bal1: 1
+  otvet2: MyText
+  bal2: 1
+  otvet3: MyText
+  bal3: 1
+  otvet4: MyText
+  bal4: 1
+  otvet5: MyText
+  bal5: 1
+  otvet6: MyText
+  bal6: 1
+  otvet7: MyText
+  bal7: 1
+  otvet8: MyText
+  bal8: 1
+  otvet9: MyText
+  bal9: 1
+  otvet10: MyText
+  bal10: 1
+  user_otvet: 1
+
+two:
+  id_test: 1
+  naim: MyText
+  otvet1: MyText
+  bal1: 1
+  otvet2: MyText
+  bal2: 1
+  otvet3: MyText
+  bal3: 1
+  otvet4: MyText
+  bal4: 1
+  otvet5: MyText
+  bal5: 1
+  otvet6: MyText
+  bal6: 1
+  otvet7: MyText
+  bal7: 1
+  otvet8: MyText
+  bal8: 1
+  otvet9: MyText
+  bal9: 1
+  otvet10: MyText
+  bal10: 1
+  user_otvet: 1

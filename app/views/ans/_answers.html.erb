@@ -1,0 +1,65 @@
+<%= paginate @ans %>
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th colspan="3"></th>
+    <th>Id test</th>
+    <th>Naim</th>
+    <th>Otvet1</th>
+    <th>Bal1</th>
+    <th>Otvet2</th>
+    <th>Bal2</th>
+    <th>Otvet3</th>
+    <th>Bal3</th>
+    <th>Otvet4</th>
+    <th>Bal4</th>
+    <th>Otvet5</th>
+    <th>Bal5</th>
+    <th>Otvet6</th>
+    <th>Bal6</th>
+    <th>Otvet7</th>
+    <th>Bal7</th>
+    <th>Otvet8</th>
+    <th>Bal8</th>
+    <th>Otvet9</th>
+    <th>Bal9</th>
+    <th>Otvet10</th>
+    <th>Bal10</th>
+    <th>User otvet</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @ans.each do |an| %>
+      <tr>
+        <td><%= link_to 'Show', an, class: 'btn btn-info' %></td>
+        <td><%= link_to 'Edit', edit_an_path(an), class: 'btn btn-warning' %></td>
+        <td><%= link_to 'Destroy', an, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <td><%= an.id_test %></td>
+        <td><%= an.naim %></td>
+        <td><%= an.otvet1 %></td>
+        <td><%= an.bal1 %></td>
+        <td><%= an.otvet2 %></td>
+        <td><%= an.bal2 %></td>
+        <td><%= an.otvet3 %></td>
+        <td><%= an.bal3 %></td>
+        <td><%= an.otvet4 %></td>
+        <td><%= an.bal4 %></td>
+        <td><%= an.otvet5 %></td>
+        <td><%= an.bal5 %></td>
+        <td><%= an.otvet6 %></td>
+        <td><%= an.bal6 %></td>
+        <td><%= an.otvet7 %></td>
+        <td><%= an.bal7 %></td>
+        <td><%= an.otvet8 %></td>
+        <td><%= an.bal8 %></td>
+        <td><%= an.otvet9 %></td>
+        <td><%= an.bal9 %></td>
+        <td><%= an.otvet10 %></td>
+        <td><%= an.bal10 %></td>
+        <td><%= an.user_otvet %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= paginate @ans %>

@@ -1,0 +1,20 @@
+<h1>Listing tests</h1>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+    <a href="<%= new_test_path %>" class="btn btn-success">New Test</a>
+  </div>
+  <div class="panel-body" style="overflow: auto;">
+    <%= form_tag tests_path, :method => 'get', :id => 'tests_search', class: 'form-inline', style: 'margin-bottom: 15px;' do %>
+        <div class="form-group">
+          <%= text_field_tag :search, params[:search], class: 'form-control', placeholder: 'Search by Naim' %>
+        </div>
+        <%= submit_tag 'Search', :name => nil, class: 'btn btn-default' %>
+        <%= link_to 'Clear', tests_path, :name => nil, class: 'btn btn-info' %>
+    <% end %>
+    <div id="tests"><%= render 'tests' %></div>
+  </div>
+  <div class="panel-footer">
+        <a href="<%= new_test_path %>" class="btn btn-success">New Test</a>
+  </div>
+</div>

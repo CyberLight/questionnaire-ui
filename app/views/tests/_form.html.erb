@@ -1,0 +1,256 @@
+<%= form_for @test, html: {class: 'form-horizontal'} do |f| %>
+    <% if @test.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@test.errors.count, "error") %> prohibited this test from being saved:</h2>
+
+          <ul>
+            <% @test.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.label :id_raz, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :id_raz, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :naim, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :naim, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez1, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez1, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb1, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb1, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :bale1, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale1, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez2, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez2, class:'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb2, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb2, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :bale2, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale2, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez3, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez3, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb3, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb3, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :bale3, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale3, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez4, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez4, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb4, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb4, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :bale4, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale4, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez5, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez5, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb5, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb5, class: 'form-control' %></div>
+
+    </div>
+    <div class="form-group">
+      <%= f.label :bale5, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale5, class: 'form-control' %></div>
+
+    </div>
+    <div class="form-group">
+      <%= f.label :rez6, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez6, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb6, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb6, class: 'form-control' %></div>
+
+    </div>
+    <div class="form-group">
+      <%= f.label :bale6, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale6, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez7, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez7, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb7, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb7, class: 'form-control' %></div>
+
+    </div>
+    <div class="form-group">
+      <%= f.label :bale7, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale7, class: 'form-control' %></div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez8, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez8, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb8, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb8, class: 'form-control' %></div>
+
+    </div>
+    <div class="form-group">
+      <%= f.label :bale8, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale8, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez9, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez9, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb9, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb9, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :bale9, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale9, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :rez10, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-5">
+        <%= f.text_area :rez10, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :balb10, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :balb10, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :bale10, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :bale10, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :user_rez, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :user_rez, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :formula, class: 'col-sm-2 control-label' %>
+
+      <div class="col-sm-1">
+        <%= f.number_field :formula, class:'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-5">
+        <%= f.submit value: 'Save Test', class: 'btn btn-success' %>
+      </div>
+    </div>
+<% end %>
